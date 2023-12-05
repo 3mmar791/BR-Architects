@@ -1,0 +1,202 @@
+/* Global */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 200vh;
+}
+.p {
+  line-height: 1.8;
+}
+p {
+  color: #777;
+}
+.container {
+  padding: 0px 10px;
+}
+header .container .header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  box-shadow: 0 0 5px 5px #ddd;
+}
+header .container .header .logo {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+header .container .header .logo a {
+  text-decoration: none;
+  color: black;
+}
+header .container .header .logo:hover {
+  background-color: #eee;
+}
+header .container .header .logo span {
+  font-size: 30 px;
+}
+header .container .header .links ul {
+  display: flex;
+  list-style: none;
+}
+header .container .header .links ul li a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+}
+header .container .header .links ul li a:hover {
+  background-color: #eee;
+}
+header .container img {
+  max-width: 100%;
+}
+header .container .image {
+  position: relative;
+}
+header .container .image p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 40px;
+  color: white;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+header .container .image p span {
+  padding: 10px;
+  background-color: #313334;
+}
+
+/* Start Of Section Project */
+section .container .pp {
+  padding: 70px 0;
+  font-size: 25px;
+}
+section .container .pp2 {
+  color: #777;
+}
+section .projects .images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+section .projects .images img {
+  width: calc(96% / 4);
+  padding-bottom: 2%;
+  position: relative;
+}
+
+/* End Of Section Project */
+/* Start Of Section About */
+section .container .about .one {
+  padding: 50px 0 20px;
+  font-size: 30px;
+}
+section .container .about button {
+  width: 100%;
+  border: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+.about .divs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about .divs div {
+  width: calc(96% / 4);
+}
+.about .divs img {
+  width: 100%;
+}
+/* End Of Section About */
+.about .two {
+  padding-bottom: 20px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+/* Start Of Contact */
+section h3 {
+  font-weight: normal;
+  font-size: 30px;
+  padding: 50px 20px 30px 0;
+}
+section .contact p {
+  font-size: 20px;
+}
+section .contact form input {
+  width: 98%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: solid 2px #eee;
+}
+section .contact form .submit {
+  width: 185px;
+  border: 0;
+  letter-spacing: 3px;
+}
+section .contact img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+/* End Of Contact */
+/* Start  Of Footer */
+footer {
+  height: 100px;
+  background-color: rgb(33, 94, 94);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p,
+footer p a {
+  color: white;
+  font-size: 30px;
+}
+footer p a {
+  text-decoration: none;
+}
+/* End Of Footer */
+/* Start Of Media */
+@media (max-width: 950px) {
+  .about .divs div {
+    width: calc(98% / 2);
+    padding: 10px 0;
+  }
+  section .projects .images img {
+    width: calc(98% / 2);
+  }
+}
+@media (max-width: 600px) {
+  header .container .header .links {
+    display: none;
+  }
+  header .container .header .logo a {
+    font-size: 15px;
+  }
+  header .container .header .logo a span {
+    font-size: 20px;
+  }
+  section .projects .images img {
+    width: calc(100%);
+  }
+  header .container .image p {
+    font-size: 20px;
+  }
+  .about .divs div {
+    width: calc(98%);
+    padding: 10px 0;
+  }
+  footer p,
+  footer p a {
+    font-size: 15px;
+  }
+  .about .two {
+    font-size: 16px;
+  }
+}
+/* End Of Media */
